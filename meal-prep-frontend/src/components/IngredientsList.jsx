@@ -1,11 +1,8 @@
-
 import { useState, useEffect } from 'react'; 
 
 import axios from 'axios'
 
-
 import Ingredient from './Ingredient'
-
 
 
 const BASEURL = "http://localhost:8080/ingredient"
@@ -18,7 +15,7 @@ const IngredientsList = () => {
     axios.get(BASEURL).then((res) => {
       setIngredientsList(res.data)
     })
-  }, [ingredientsList])
+  }, [])
 
   return (
     <div className="ingredient-list-container">

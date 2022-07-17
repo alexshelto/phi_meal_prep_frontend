@@ -13,8 +13,6 @@ const Ingredient = ( props ) => {
   return (
     <div className='ingredient'>
       <h1> {name} </h1>
-
-
       <button onClick={deleteIngredient}>
         Delete Ingredient
       </button>
